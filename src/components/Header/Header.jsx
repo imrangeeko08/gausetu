@@ -34,7 +34,7 @@ const Header = () => {
                 ))}
             </ul>
             <div>
-                <button className='text-white bg-[#FF4F00] p-2 rounded-full'>Download</button>
+                <button className='text-white bg-[#FF4F00] p-2 rounded-full'>Donate Now</button>
             </div>
         </div>
     )
