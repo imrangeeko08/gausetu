@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-white text-black pt-8 pb-4 mt-8 border-t border-gray-200">
+    <footer className="bg-[#FFF3ED] text-black pt-8 pb-4 mt-8 border-t border-gray-200">
       {/* Newsletter Signup Bar */}
       <div className="max-w-5xl mx-auto mb-8 px-4">
         <div className="bg-gray-50 rounded-lg shadow-sm flex flex-col md:flex-row items-center justify-between p-4 md:p-6 gap-4">

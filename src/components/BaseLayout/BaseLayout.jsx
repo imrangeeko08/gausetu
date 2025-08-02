@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer'
 
 const BaseLayout = ({ children }) => {
     return (
-        <div className="flex flex-col bg-[#F9FAFB] min-h-screen">
+        <div className="flex flex-col bg-white min-h-screen">
             <Header />
             {children}
             <Footer />
