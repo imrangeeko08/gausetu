@@ -2,6 +2,11 @@ import React from 'react'
 import HeroSection from './HeroSection'
 import VideoSectioin from './VideoSectioin'
 import CountingDetial from './CountingDetial'
+import WhyWeExist from './WhyWeExist'
+import CowGallery from './CowGallery'
+import DevotionLegacy from '../DevotionLegacy'
+import TestimonialCarousel from './TestimonialCarousel'
+import Banner from '../Banner'
 
 const HomePage = () => {
   return (
@@ -24,7 +29,13 @@ Every cow has a name. Every act has meaning. And every person who visits becomes
 
 <VideoSectioin/>
 <div className='lg:px-[140px] px-10'><CountingDetial/></div> 
+<div className='lg:px-[100px] px-10'><WhyWeExist/></div> 
+<div className='lg:px-[100px] px-10'><CowGallery/></div> 
+<div className='lg:px-[140px] px-10'><DevotionLegacy/></div> 
+<div className=''><TestimonialCarousel/></div> 
+<div className='lg:px-[80px] px-10'><Banner/></div> 
     </div>
+    
   )
 }
 
