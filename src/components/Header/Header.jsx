@@ -97,12 +97,12 @@ const Header = () => {
 
   const bgClass =
     isHome && !isScrolled
-      ? 'bg-transparent text-white'
-      : 'bg-white text-black shadow-md'
+      ? 'bg-transparent text-white fixed'
+      : 'bg-transparent text-black'
 
   return (
     <div
-      className={`w-full py-4 px-[60px] flex justify-between items-center text-center fixed top-0 z-50 transition-all duration-300 ${bgClass}`}
+      className={`w-full py-4 px-[60px] flex justify-between items-center text-center  top-0 z-50 transition-all duration-300 ${bgClass}`}
     >
       <div className='flex flex-col items-start justify-start'>
         <div className='text-[32px] font-semibold' style={{ color: '#FF4F00' }}>
