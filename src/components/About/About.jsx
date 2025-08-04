@@ -4,6 +4,7 @@ import StoryContent from './StoryContent'
 import CowGallery from '../Home/CowGallery'
 import CountingDetail from '../Home/CountingDetial'
 import Banner from '../Banner'
+import ArchivesSection from './ArchivesSection'
 
 const About = () => {
 
@@ -47,6 +48,10 @@ const About = () => {
                     btn1={{ label: "Join Us @GauSetu", href: "#" }}
                     btn2={{ label: "Donate Now", href: "#" }}
                 />
+
+            </div>
+            <div className='px-[10px] md:px-[40px] lg:px-[100px] xl:px-[140px] my-4 sm:my-[40px]'>
+                <ArchivesSection />
 
             </div>
         </div>
