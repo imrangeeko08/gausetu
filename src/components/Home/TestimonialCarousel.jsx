@@ -16,14 +16,14 @@ const TestimonialCarousel = () => {
   return (
     <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-2">From the Heart of GauSetu</h2>
-        <p className="text-center text-gray-600 text-lg mb-10">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-center mb-2">From the Heart of GauSetu</h2>
+        <p className="text-center text-gray-600 text-xm sm:text-base md:text-lg mb-10">
           Every blessing brings us closer to our goal — to serve with heart, to protect with purpose.
         </p>
 
         <div className="flex flex-col lg:flex-row items-center gap-10 bg-white rounded-xl shadow-lg p-6 sm:p-10 transition-all duration-500">
           <div className="flex-1">
-            <p className="text-xl font-medium text-gray-800 mb-4">
+            <p className="text-base sm:text-xl font-medium text-gray-800 mb-4">
               {testimonials[activeIndex].message}
             </p>
             <p className="text-gray-600 mb-4">{testimonials[activeIndex].description}</p>

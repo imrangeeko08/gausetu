@@ -21,7 +21,7 @@ const HeroSection = () => {
           Deep in the heart of Jodhpur, lives a sanctuary where cows are family, not just animals.
           Welcome to GauSetu – a humble path of service built with devotion and nurtured by community.
         </p>
-        <button className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition cursor-pointer">
+        <button className="border border-white text-lg font-semibold text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition cursor-pointer">
           Contact With Us
         </button>
       </div>

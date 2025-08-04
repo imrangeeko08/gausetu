@@ -27,8 +27,8 @@ const values = [
 const WhyWeExist = () => {
   return (
     <section className="py-16  bg-white text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">Why We Exist</h2>
-      <p className="text-gray-600 text-lg max-w-4xl mx-auto mb-10">
+      <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-4">Why We Exist</h2>
+      <p className="text-[#696969] text-base sm:text-lg lg:text-xl max-w-4xl mx-auto mb-10">
         In times where convenience trumps care, GauSetu stands as a reminder of our roots — of
         dharma, nature, and responsibility. We are committed to:
       </p>
@@ -40,8 +40,8 @@ const WhyWeExist = () => {
             className="border-2 border-dashed  border-gray-300 p-4 rounded-md hover:shadow-md transition"
           >
             <div className="mb-4 w-full   flex justify-start">{item.icon}</div>
-            <h3 className="font-semibold text-sm mb-2">{item.title}</h3>
-            <p className="text-gray-600 text-sm">{item.description}</p>
+            <h3 className="font-semibold lg:text-base text-sm mb-2">{item.title}</h3>
+            <p className="text-gray-600 lg:text-base text-sm">{item.description}</p>
           </div>
         ))}
       </div>

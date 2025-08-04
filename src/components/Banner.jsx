@@ -10,10 +10,10 @@ const Banner = ({
   btn2 = { label: "Donate Now", href: "#" }
 }) => {
   return (
-    <div className="bg-gradient-to-r from-[#FF6A00] to-[#FF6A00] rounded-3xl p-6 sm:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+    <div className="bg-gradient-to-r from-[#FF6A00] to-[#FF6A00] rounded-3xl p-4 sm:p-6 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
       {/* Text Content */}
       <div className="flex-1 text-white">
-        <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold leading-tight mb-4">
           {title.split('\n').map((line, idx) => (
             <div key={idx}>{line}</div>
           ))}
@@ -21,16 +21,16 @@ const Banner = ({
         <p className="text-base sm:text-lg font-medium text-white/90 mb-6">
           {description}
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex text-sm sm:text-base flex-wrap gap-2 sm:gap-4">
           <Link
             href={btn1.href}
-            className="bg-white text-gray-900 font-semibold py-3 px-6 rounded-full shadow hover:opacity-90 transition"
+            className="bg-white text-gray-900 font-semibold py-3 px-4 sm:px-6 rounded-full shadow hover:opacity-90 transition"
           >
             {btn1.label}
           </Link>
           <Link
             href={btn2.href}
-            className="border border-white text-white font-semibold py-3 px-6 rounded-full hover:bg-white hover:text-orange-600 transition"
+            className="border border-white text-white font-semibold py-3 px-4 sm:px-6 rounded-full hover:bg-white hover:text-orange-600 transition"
           >
             {btn2.label}
           </Link>
@@ -45,7 +45,7 @@ const Banner = ({
             alt="Call to action"
             width={400}
             height={400}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-[400px] object-cover rounded-2xl"
           />
         </div>
       </div>
