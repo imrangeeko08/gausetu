@@ -9,6 +9,30 @@ import TestimonialCarousel from './TestimonialCarousel'
 import Banner from '../Banner'
 
 const HomePage = () => {
+
+  const statsData = [
+    {
+      value: '125+',
+      title: 'Cows in Our Care',
+      description: 'Under daily love, care & nourishment in Shree Nath Gaushala.',
+      link: '/donate',
+      linkText: 'Donate Cow',
+    },
+    {
+      value: '₹8.5+ Lakhs',
+      title: 'Total Donations',
+      description: 'Transparent and heartfelt contributions from kind souls like you.',
+      link: '/donate',
+      linkText: 'Donate More',
+    },
+    {
+      value: '50+',
+      title: 'Volunteer Sevas',
+      description: 'Meaningful actions taken by volunteers to serve Gau Mata.',
+      link: '/donate',
+      linkText: 'Become a Volunteer',
+    },
+  ];
   return (
     <div className='min-h-screen '>
       <HeroSection />
@@ -28,7 +52,7 @@ const HomePage = () => {
       </div>
 
       <VideoSectioin />
-      <div className='lg:px-[140px] px-4 sm:px-10'><CountingDetial /></div>
+      <div className='lg:px-[140px] px-4 sm:px-10'><CountingDetial stats={statsData} /></div>
       <div className='lg:px-[100px] px-4 sm:px-10'><WhyWeExist /></div>
       <div className='lg:px-[100px] px-4 sm:px-10'><CowGallery /></div>
       <div className='lg:px-[140px] px-4 sm:px-10'><DevotionLegacy /></div>

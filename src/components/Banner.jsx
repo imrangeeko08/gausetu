@@ -10,15 +10,15 @@ const Banner = ({
   btn2 = { label: "Donate Now", href: "#" }
 }) => {
   return (
-    <div className="bg-gradient-to-r from-[#FF6A00] to-[#FF6A00] rounded-3xl p-4 sm:p-6 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+    <div className="bg-gradient-to-r from-[#FF4F00] to-[#FF854E] rounded-[50px] p-4 sm:p-6 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
       {/* Text Content */}
       <div className="flex-1 text-white">
-        <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold leading-tight mb-4">
+        <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-[80px] font-extrabold leading-tight mb-4">
           {title.split('\n').map((line, idx) => (
             <div key={idx}>{line}</div>
           ))}
         </h2>
-        <p className="text-base sm:text-lg font-medium text-white/90 mb-6">
+        <p className="text-base sm:text-lg md:text-xl lg:text-[32px] font-medium text-white/90 mb-6">
           {description}
         </p>
         <div className="flex text-sm sm:text-base flex-wrap gap-2 sm:gap-4">
@@ -45,7 +45,7 @@ const Banner = ({
             alt="Call to action"
             width={400}
             height={400}
-            className="w-full h-[400px] object-cover rounded-2xl"
+            className="w-full h-[400px] lg:h-[600px] object-cover rounded-2xl"
           />
         </div>
       </div>

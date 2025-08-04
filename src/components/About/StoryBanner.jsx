@@ -3,7 +3,7 @@ import React from "react";
 
 const StoryBanner = () => {
   return (
-    <section className="w-full flex justify-center">
+    <section className="w-full flex justify-center px-[10px] md:px-[40px] lg:px-[100px] xl:px-[140px] ">
       <div className="relative w-full rounded-2xl overflow-hidden">
         {/* Image */}
         <Image

@@ -12,7 +12,7 @@ const cowImages = [
 
 const CowGallery = () => {
   return (
-    <div className="space-y-10 py-10">
+    <div className="space-y-10 py-10 ">
       {/* Left to Right */}
       <div className="overflow-hidden no-scrollbar">
         <div className="flex animate-scroll-left gap-4 px-6 w-max">
