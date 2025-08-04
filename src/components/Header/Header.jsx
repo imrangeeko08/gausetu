@@ -53,7 +53,7 @@ const Header = () => {
               href={item.path}
               className={`transition-colors duration-200 hover:text-[#FF4F00] ${router.pathname === item.path
                 ? 'text-[#FF4F00]'
-                : isHome ? `${isScrolled?'text-black':'text-white'}`
+                : isHome ? `${isScrolled ? 'text-black' : 'text-white'}`
                   : 'text-black'
                 }`}
             >
@@ -70,6 +70,7 @@ const Header = () => {
             ? 'text-white bg-[#FF4F00] hover:bg-white hover:text-[#FF4F00]'
             : 'text-white bg-[#FF4F00]'
             }`}
+          onClick={() => router.push('/donate')}
         >
           Donate Now
         </button>
@@ -113,7 +114,7 @@ const Header = () => {
 
         <div className='px-6 mt-4'>
           <button
-            onClick={() => setIsMenuOpen(false)}
+            onClick={() => { setIsMenuOpen(false), router.push('/donate') }}
             className='w-full py-3 bg-[#FF4F00] text-white rounded-full hover:bg-orange-500 transition'
           >
             Donate Now
@@ -122,13 +123,15 @@ const Header = () => {
       </div>
 
       {/* Overlay */}
-      {isMenuOpen && (
-        <div
-          onClick={() => setIsMenuOpen(false)}
-          className='fixed top-0 left-0 w-full h-full  bg-opacity-40 z-40'
-        ></div>
-      )}
-    </div>
+      {
+        isMenuOpen && (
+          <div
+            onClick={() => setIsMenuOpen(false)}
+            className='fixed top-0 left-0 w-full h-full  bg-opacity-40 z-40'
+          ></div>
+        )
+      }
+    </div >
   )
 }
 
