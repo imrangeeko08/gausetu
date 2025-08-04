@@ -5,7 +5,7 @@ import EventListSection from './EventListSection';
 
 const Event = () => {
   return (
-    <div className='min-h-screen bg-gray-50'>
+    <div className='min-h-screen bg-gray-50 w-full'>
       <EventHeroSection />
       <EventListSection />
     </div>
